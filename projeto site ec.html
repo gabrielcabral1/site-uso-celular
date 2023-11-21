@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso Consciente de Celular</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1, h2, p {
+            text-align: center;
+        }
+
+        nav {
+            background-color: #2980b9;
+            padding: 10px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Uso Consciente de Celular</h1>
+    </header>
+
+    <nav>
+        <button onclick="showPage('introducao')">Introdução</button>
+        <button onclick="showPage('prós_contras')">Prós e Contras</button>
+        <button onclick="showPage('dicas')">Dicas para um Uso Consciente</button>
+    </nav>
+
+    <section id="introducao" style="display: block;">
+        <h2>Desvendando o Universo Digital: Uso Consciente de Celulares</h2>
+        <p>Além disso, vale ressaltar que o celular para uso pessoal está presente na vida de 155,2 milhões de brasileiros com 10 anos ou mais. O número representava 84,4% da população a partir dessa idade em 2021, percentual maior que o estimado em 2019 (81,4%). O dado foi revelado nesta sexta-feira pela Pnad Contínua (Pesquisa Nacional por Amostra de Domicílios), coletada pelo IBGE (Instituto Brasileiro de Geografia e Estatística).</p>
+        <p>Conforme os números, há ainda uma "grande discrepância" no volume de telefones conforme a situação do domicílio. Enquanto 87,1% das pessoas que viviam em área urbana tinham celular para uso pessoal, esse percentual era de 67,6% entre moradores na zona rural.</p>
+        <p>Essa crescente presença dos dispositivos móveis na vida cotidiana dos brasileiros destaca a relevância de explorarmos o desenvolvimento de aplicativos web que possam atender às necessidades e demandas desse público cada vez mais conectado.</p>
+        <p>Na passagem de 2019 para 2021, a parcela da população de 10 anos ou mais que tinha acesso à internet por meio dos aparelhos cresceu de 91,7% para 94,8%. Na área rural esse percentual avançou de 80,7% para 89,1%, mas permaneceu menor que o das regiões urbanas, que aumentou de 93% para 95,5%.</p>
+    </section>
+
+
+    <section id="prós_contras">
+        <h2>Prós e Contras do Uso de Celulares</h2>
+
+        <div style="display: flex; justify-content: space-around;">
+            <div style="flex: 1;">
+                <h3>Prós</h3>
+                <ul>
+                    <li><strong>Conectividade Instantânea:</strong> Mantenha-se conectado com amigos e familiares em qualquer lugar e a qualquer momento.</li>
+                    <li><strong>Acesso à Informação:</strong> Tenha informações educacionais e de entretenimento ao alcance dos seus dedos.</li>
+                    <li><strong>Ferramenta de Produtividade:</strong> Utilize o celular como uma ferramenta eficaz para trabalho e produtividade.</li>
+                </ul>
+            </div>
+
+            <div style="flex: 1;">
+                <h3>Contras</h3>
+                <ul>
+                    <li><strong>Fadiga Ocular:</strong> A exposição prolongada à tela pode causar fadiga nos olhos.</li>
+                    <li><strong>Distúrbios do Sono:</strong> A luz azul emitida pelos dispositivos pode interferir no sono.</li>
+                    <li><strong>Isolamento Social:</strong> A dependência das interações online pode levar ao isolamento social.</li>
+                    <li><strong>Impacto Físico:</strong> O uso prolongado pode resultar em problemas posturais e dores físicas.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="dicas">
+        <h2>Dicas para um Uso Consciente de Celular</h2>
+        <p>Para manter um equilíbrio saudável, considere as seguintes dicas:</p>
+        <ul>
+            <li><strong>Estabeleça Limites:</strong> Defina limites de tempo para o uso diário do celular.</li>
+            <li><strong>Evite Uso Antes de Dormir:</strong> Reduza a exposição à luz azul evitando o uso do celular antes de dormir.</li>
+            <li><strong>Interações Face a Face:</strong> Priorize interações sociais presenciais em vez de virtuais.</li>
+            <li><strong>Exercícios Físicos:</strong> Pratique exercícios para mitigar os efeitos físicos do uso excessivo.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Oculta todas as seções
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Exibe a seção selecionada
+            document.getElementById(pageId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
